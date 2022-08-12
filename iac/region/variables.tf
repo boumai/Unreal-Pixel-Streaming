@@ -7,7 +7,7 @@
 
 #CHANGE: Set your forked path here for your GitHub repo (and be sure to check in changes as scripts pull resources from GitHub)
 variable "gitpath" {
-  default = "C:\Windows\System32\Unreal-Pixel-Streaming\iac\region\"
+  default = ""
 }
 
 #The name of the Unreal 3D App, (i.e., PixelStreamingDemo.exe without the .exe at the end)
