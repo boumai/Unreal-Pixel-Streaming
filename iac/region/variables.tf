@@ -7,12 +7,12 @@
 
 #CHANGE: Set your forked path here for your GitHub repo (and be sure to check in changes as scripts pull resources from GitHub)
 variable "gitpath" {
-  default = "https://github.com/Azure/Unreal-Pixel-Streaming/"
+  default = "C:\Windows\System32\Unreal-Pixel-Streaming\iac\region\"
 }
 
 #The name of the Unreal 3D App, (i.e., PixelStreamingDemo.exe without the .exe at the end)
 variable "pixel_stream_application_name" {
-  default = "PixelStreamingDemo"
+  default = "ThirdPerson"
 }
 
 #Resolution width and height for the 3D App to run (smaller resolutions can fit more streams per GPU and/or a higher FPS)
@@ -63,7 +63,7 @@ variable "matchmaker_vm_storage_account_type" {
 #but increase your quota in your Azure portal for NV12s_v3's and use those below as they have a newer, more 
 #powerful CPU for similar price. NV6 was the default chosen below to avoid quota errors when using this for the first time.
 variable "vmss_size" {
-  default = "Standard_NV6"
+  default = "Standard_NV6ads_A10_v5"
   #default = "Standard_NV12s_v3"
 }
 
